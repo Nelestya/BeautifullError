@@ -15,10 +15,11 @@ class Beautifull_Error():
         print(str().center(width + 1, '_'))
         # Function Appel
         self.bloc()
-        print(str().center(width + 1, '_'))
+        print(str().center(width + 1, '_') + "\n")
 
     def cutDescription(self):
         """cut the decription for work this"""
+
         try:
             if len(self.errorDescription) > self.width / 2 - 2:
                 # while len(self.errorDescription) > self.width / 2 - 2:
@@ -55,4 +56,6 @@ class Beautifull_Error():
 # TEST PHASE
 if __name__ == '__main__':
     err = Beautifull_Error(
-        "error", "lol", "jisjfsigsiaaaaaaaaaaaaaaaaaaaaaaaaaaaddddddddddddddddddddddddddddzdzdzdzdzdaaaabc")
+        "error", "lol", "short desc")
+    err = Beautifull_Error(
+        "error", "lol", "LONNNNNNNNNG DESCRIPTION!!!!!!!!!!!!!")
